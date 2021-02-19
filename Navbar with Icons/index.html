@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .tabnav {
+        width: 100%;
+        overflow: auto;
+        background-color: #555;
+      }
+
+      .tabnav a {
+        text-decoration: none;
+        font-size: 17px;
+        float: left;
+        padding: 14px 16px;
+        color: #ccc;
+      }
+
+      .tabnav a:hover {
+        background-color: #000;
+      }
+
+      .active {
+        background-color: #4caf50;
+      }
+
+      @media screen and (max-width: 500px;) {
+        .tabnav a {
+          float: none;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabnav">
+      <a class="active" href="#home"> <i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#search"> <i class="fa fa-fw fa-search"></i> Search</a>
+      <a href="#contact"> <i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="#login"> <i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+  </body>
+</html>
