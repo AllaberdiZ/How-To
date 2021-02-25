@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body{
+        font-family: "Lato" sans-serif;
+        transition: background-color .5s;
+      }
+
+      .sidenav{
+        background-color: #111;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 60px;
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .sidenav a{
+        text-decoration:none;
+        color: #818181;
+        font-size: 25px;
+        padding: 8px 8px 8px 32px;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn{
+        position: absolute;
+        margin-left: 50px;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+      }
+
+      .main{
+        padding: 18px;
+        transition: margin-left 0.5s;
+      }
+
+      @media screen and (max-height:450px){
+        .sidenav{
+          padding: 15px;
+        }
+        .sidenav a{
+          font-size:18px;
+        }
+      }
+    </style>
+    <script>
+      function openNav(){
+        document.getElementById("mySidenav").style.width = "250px"
+        document.getElementById("main").style.marginLeft = "250px"
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)"
+      }
+
+      function closeNav(){
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0"
+        document.body.style.backgroundColor = "white"
+      }
+
+    </script>
+  </head>
+  <body>
+    <div class="sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <h2>Side Navigation</h2>
+      <p>
+        Click on the element below to open the side navigation menu, and push
+        this content to the right. Notice that we add a black see-through
+        background-color to body when the sidenav is opened.
+      </p>
+      <span onclick="openNav()" style="cursor: pointer; font-size: 30px">&#9776 open</span>
+    </div>
+  </body>
+</html>
