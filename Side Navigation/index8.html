@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Lato" sans-serif;
+        }
+        .sidenav{
+            width: 0;
+            height: 100%;
+            background-color: #111;
+            top: 0;
+            left: 0;
+            padding-top: 60px;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden ;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .sidenav a{
+            color: #818181;
+            text-decoration: none;
+            font-size:25px;
+            padding: 8px 8px 8px 32px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover{
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn{
+            font-size: 36px;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height:450px){
+            .sidenav{
+                padding-top: 15px;
+            }
+            .sidenav a{
+                font-size: 18px;
+            }
+        }
+        
+    </style>
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "100%"
+        }
+
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0"
+        }
+    </script>
+  </head>
+  <body>
+    <div class="sidenav" id="mySidenav">
+      <a href="javscript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main">
+      <h2>Animated Sidenav Example Full Width</h2>
+      <p>Click on the element below to open the navigation menu.</p>
+      <span onclick="openNav()" style="font-size: 30px; cursor: pointer;">&#9776</span>
+    </div>
+  </body>
+</html>
