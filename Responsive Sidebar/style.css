@@ -1,0 +1,59 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.sidenav {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+.sidenav a {
+  display: block;
+  text-decoration: none;
+  padding: 6px 6px 6px 32px;
+  color: black;
+}
+
+.sidenav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sidenav a:hover:not(.active) {
+  background-color: #555;
+  color: #f1f1f1;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidenav a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    float: none;
+  }
+}
