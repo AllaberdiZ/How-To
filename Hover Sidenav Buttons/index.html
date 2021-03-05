@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+      .sidenav a {
+        position: absolute;
+        transition: 0.3s;
+        left: -80px;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .sidenav a:hover {
+        left: 0;
+      }
+
+      #instagram {
+        top: 20px;
+        background-color: #f44336;
+      }
+
+      #facebook {
+        top: 80px;
+        background-color: rgb(0, 0, 255);
+      }
+
+      #twitter {
+        top: 140px;
+        background-color: #2196f3;
+      }
+
+      #whatsapp {
+        top: 200px;
+        background-color: #4caf50;
+      }
+
+      #telegram {
+        top: 260px;
+        background-color: rgb(18, 172, 223);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="https://www.instagram.com/" id="instagram">Instagram</a>
+      <a href="https://www.facebook.com/" id="facebook">Facebook</a>
+      <a href="https://twitter.com/" id="twitter">Twitter</a>
+      <a href="https://www.whatsapp.com/" id="whatsapp">WhatsApp</a>
+      <a href="https://web.telegram.org/" id="telegram">Telegram</a>
+    </div>
+    <div style="margin-left: 80px">
+      <h2>Hoverable Sidenav Buttons</h2>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+  </body>
+</html>
