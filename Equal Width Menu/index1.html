@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        background-color: #555;
+        overflow: auto;
+        width: 100%;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 12px;
+        float: left;
+        width: 25%;
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .navbar a:hover {
+        background-color: #000;
+      }
+      .navbar a.active {
+        background-color: #4caf50;
+      }
+
+      @media screen and (max-width: 600px) {
+        .navbar a {
+          width: 100%;
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Navbar with Links of Same Width</h2>
+    <p>Try to resize the browser window to see the responsive effect.</p>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </body>
+</html>
