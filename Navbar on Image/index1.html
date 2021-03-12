@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .img {
+        background-image: url(img_nature.jpg);
+        min-height: 380px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        position: relatve;
+      }
+
+      .container {
+        position: absolute;
+        width: auto;
+        margin: 20px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 17px;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        float: left;
+      }
+
+      .topnav a:hover {
+        color: black;
+        background-color: #ddd;
+      }
+
+      .topnav a.active {
+        color: white;
+        background-color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Navbar On Image</h2>
+
+    <div class="img">
+      <div class="container">
+        <div class="topnav">
+          <a href="#" class="active">Home</a>
+          <a href="#">News</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
