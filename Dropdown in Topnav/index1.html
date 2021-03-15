@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        overflow: hidden;
+        font-family: Arial;
+        background-color: #333;
+      }
+
+      .navbar a {
+        padding: 14px 16px;
+        color: white;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        background-color: inherit;
+        padding: 14px 16px;
+        border: none;
+        color: white;
+        outline: none;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        float: left;
+        background-color: #f9f9f9;
+        z-index: 1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+
+      .dropdown-content a {
+        padding: 12px 16px;
+        color: black;
+        float: none;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
