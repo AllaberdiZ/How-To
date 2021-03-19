@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        font-size: 17px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+
+      .subnav {
+        float: left;
+        overflow: hidden;
+      }
+
+      .subnav .subnavbtn {
+        background-color: inherit;
+        border: none;
+        font-size: 16px;
+        padding: 14px 16px;
+        color: white;
+        font-family: inherit;
+        margin: 0;
+        outline: none;
+      }
+
+      .topnav a:hover,
+      .subnav:hover .subnavbtn {
+        background-color: #4caf50;
+      }
+
+      .subnav-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #4caf50;
+        z-index: 1;
+      }
+
+      .subnav-content {
+        float: left;
+        color: white;
+        text-decoration: none;
+      }
+
+      .subnav-content a:hover {
+        background-color: #eee;
+        color: black;
+      }
+
+      .subnav:hover .subnav-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">
+          About <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Services <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">
+          Partners <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </div>
+    <div style="padding: 0 16px">
+      <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
+      <p>
+        Hover over the "about", "services" or "partners" link to see the sub
+        navigation menu.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        padding: 14px 16px;
+        font-family: 16px;
+        color: white;
+        float: left;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .subnav {
+        overflow: hidden;
+        float: left;
+      }
+
+      .subnav .subnavbtn {
+        padding: 14px 16px;
+        border: none;
+        margin: 0;
+        font-family: inherit;
+        background-color: inherit;
+        color: white;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .topnav a:hover,
+      .subnav:hover .subnavbtn {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .subnav-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #4caf50;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .subnav:hover .subnav-content {
+        display: block;
+      }
+
+      .subnav-content a:hover {
+        background-color: #eee;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">
+          About <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">Company</a>
+          <a href="#">Team</a>
+          <a href="3">Careers</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Services <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">Bring</a>
+          <a href="#">Deliver</a>
+          <a href="#">Package</a>
+          <a href="#">Express</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">
+          Partners <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+          <a href="#">DustinR</a>
+          <a href="#">BayAbdi</a>
+          <a href="#">FucerDan</a>
+          <a href="#">AyZed</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </div>
+  </body>
+</html>
