@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidepanel {
+      width: 0;
+      background-color: #111;
+      height: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .sidepanel a {
+      color: #818181;
+      font-size: 25px;
+      padding: 8px 8px 8px 32px;
+      display: block;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidepanel .closebtn {
+      position: absolute;
+      font-size: 36px;
+      right: 25px;
+      top: 0;
+    }
+
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+
+    .openbtn:hover {
+      background-color: #444;
+    }
+  </style>
+  <script>
+    function openBar() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeBar() {
+      document.getElementById("mySidepanel").style.width = "0px";
+    }
+  </script>
+  <body>
+    <div class="sidepanel" id="mySidepanel">
+      <a href="javascript:void(0)" onclick="closeBar()" class="closebtn"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <button class="openbtn" onclick="openBar()">
+      &#9776; Toggle Sidepanel
+    </button>
+    <h2>Collapsed Sidepanel</h2>
+    <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "lato", sans-serif;
+      }
+
+      .sidepanel {
+        width: 0;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        position: fixed;
+        padding-top: 60px;
+        z-index: 1;
+        transition: 0.5s;
+        overflow-x: hidden;
+      }
+
+      .sidepanel a {
+        color: #818181;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        padding: 8px 8px 8px 32px;
+        transition: 0.3s;
+      }
+
+      .sidepanel a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidepanel .closebtn {
+        top: 0;
+        right: 25px;
+        position: absolute;
+        font-size: 36px;
+      }
+
+      .openbtn {
+        padding: 10px 15px;
+        background-color: #111;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+      }
+
+      .openbtn:hover {
+        background-color: #444;
+      }
+    </style>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0px";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sidepanel" id="mySidepanel">
+      <a href="javascript:void(0);" onclick="closeNav()" class="closebtn">
+        &times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">
+      &#9776; Toggle Sidepanel
+    </button>
+    <h2>Collapsed Sidepanel</h2>
+    <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
+  </body>
+</html>
